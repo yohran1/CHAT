@@ -1,4 +1,6 @@
-const socket = io("http://localhost:3000")
+const sala = window.location.pathname.replace(/\//g, "")
+console.log(sala)
+const socket = io(`http://localhost:3000/${sala}`)
 
 let user = null
 
