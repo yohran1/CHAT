@@ -11,8 +11,8 @@ socket.on("update_messages", (messages) =>{
 
 function upDateMessages(messages){
     const div_message = document.querySelector("#messages")
-
     let list_messages = "<ul>"
+
     messages.forEach(message => {
         list_messages += `<li>${message.user} : ${message.msg}</li>`
     });
@@ -35,11 +35,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
 
         const message = document.forms["message_form_name"]["msg"].value
+
         document.forms["message_form_name"]["msg"].value = ""
         socket.emit("new_message", { user: user, msg: message})
         console.log(message)
     })
-
 
     const userForm = document.querySelector("#user_form")
 

@@ -9,23 +9,27 @@
         <title>CHAT</title>
     </head> 
     <body>
+        <div class="container">
 
-        <form name="user_form_name" id="user_form">
-            <p>Usuário</p>
-            <input name="user" id="user" type="text" placeholder="Digite Seu Nome!">
-            <button type="submit">Definir</button>
-        </form>
+            <div class="form">
+                <form name="user_form_name" id="user_form">
+                    <p><b>Usuário</b></p>
+                    <input name="user" id="user" type="text" placeholder="Digite Seu Nome!">
+                    <button type="submit">Definir</button>
+                </form>
+            </div>
 
-        <div id="messages">
-  
+            <div id="messages"></div>
+
+            <div class="form">
+                <form name="message_form_name" id="message_form">
+                    <input name="msg" id="message" type="text" placeholder="Mensagem">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
         </div>
         
-        <form name="message_form_name" id="message_form">
-            <input name="msg" id="message" type="text" placeholder="Mensagem">
-            <button type="submit">Enviar</button>
-        </form>
-
-
         <script src="/socket.io/socket.io.js"></script>
         <script src="./chat.js"></script>
     </body>

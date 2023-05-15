@@ -3,7 +3,6 @@ const path = require("path")
 const app = express()
 const socketIO = require("socket.io")
 
-
 // app.use("/", express.static(path.join(__dirname, "public")))
 app.use("/grupo1", express.static(path.join(__dirname, "public")))
 app.use("/grupo2", express.static(path.join(__dirname, "public")))
@@ -40,11 +39,6 @@ const grupo2 = io.of("/grupo2").on("connection", (socket)=>{
         grupo2.emit("update_messages", messages.grupo2)
     })
 })
-
-
-
-
-
 // io.on("connection", (socket)=>{
 
 //     console.log("New Connection")
