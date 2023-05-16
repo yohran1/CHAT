@@ -14,7 +14,7 @@ function upDateMessages(messages){
     let list_messages = "<ul>"
 
     messages.forEach(message => {
-        list_messages += `<li>${message.user} : ${message.msg}</li>`
+        list_messages += `<li>${message.user}: > ${message.msg}</li>`
     });
     list_messages += "</ul>"
 

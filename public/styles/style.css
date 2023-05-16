@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url("../img/wallpaper.jpeg");
+}
 .container{
     width: 30vw;
     margin: auto;
@@ -23,7 +26,7 @@ form{
 p{
     display: flex;
     flex-direction: column;
-    
+    color: white;
     font-size: 20px;
     padding: 0;
     margin: 0;
@@ -37,7 +40,7 @@ p{
 #messages{
     width: 80%;
     margin: auto;
-    background-image: url("../img/wallpaper.jpeg");
+    background-image: url("../img/conversa.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: gray;
