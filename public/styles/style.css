@@ -1,38 +1,42 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 .container{
     width: 30vw;
+    margin: auto;
 }
 .form{
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 
 }
 form{
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: inherit;
+    justify-content: space-between;
+    width: 100%;
 }
 p{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
     font-size: 20px;
     padding: 0;
     margin: 0;
 }
 #user{
+    width: 100%;
     padding: 5px;
-    margin-bottom: 20px;
     border-radius: 0 10px 0 10px;
     border: 1px solid black;
 }
 #messages{
     width: 80%;
+    margin: auto;
     background-image: url("../img/wallpaper.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,15 +45,25 @@ p{
     height: 700px;
     border-radius: 5px;
 }
+.in{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#message_form{
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    width: 100%;
+}
 div{
     padding: 10px;
-    margin: auto;
 }
 ul{
     width: 50%;
     list-style: none;
-    /* background-color: aqua;
-    border: 1px solid black; */
 }
 li{
     background-color: gainsboro;
@@ -59,12 +73,13 @@ li{
     border: 1px solid black;
 }
 #message{
+    width: 100%;
     padding: 5px;
-    margin-top: 10px;
     border-radius: 0 10px 0 10px;
     border: 1px solid black;
 }
 button{
+    margin-left: 3px;
     padding: 8px;
     border: transparent;
     border-radius: 10px;
