@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         document.forms["message_form_name"]["msg"].value = ""
         socket.emit("new_message", { user: user, msg: message})
         console.log(message)
-    })
+})
 
     const userForm = document.querySelector("#user_form")
 
